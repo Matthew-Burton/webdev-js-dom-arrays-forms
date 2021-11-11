@@ -1,4 +1,10 @@
 function init() {
+  document
+    .getElementById("myTestEvent")
+    .addEventListener("click", function(ev) {
+      console.dir(ev);
+    });
+
   document.querySelector(".red").addEventListener("click", function(ev) {
     document.querySelector("body").setAttribute("class", "redBack");
   });
