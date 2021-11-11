@@ -5,6 +5,10 @@ function init() {
       console.dir(ev);
     });
 
+  document.querySelector(".default").addEventListener("click", function(ev) {
+    document.querySelector("body").setAttribute("class", "reset");
+  });
+
   document.querySelector(".red").addEventListener("click", function(ev) {
     document.querySelector("body").setAttribute("class", "redBack");
   });
