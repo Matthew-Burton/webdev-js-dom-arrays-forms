@@ -1,4 +1,5 @@
 function init() {
+  document.querySelector("nav ul li").setAttribute("class", "currentPage");
   document
     .getElementById("myTestEvent")
     .addEventListener("click", function(ev) {
